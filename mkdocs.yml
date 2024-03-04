@@ -2,10 +2,8 @@ site_name: USTC OSH 2024 课程主页
 repo_name: OSH-2024/OSH-2024.github.io
 repo_url: https://github.com/OSH-2024/OSH-2024.github.io
 theme:
-  name: 'material'
-  language: 'zh'
-  custom_dir: 'overrides'
-  language: 'zh'
+  name: material
+  language: zh
   features:
     - content.code.copy
     - navigation.footer
