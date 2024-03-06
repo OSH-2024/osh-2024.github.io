@@ -41,4 +41,8 @@ osh-2024-labs
     - [pic] // src 文件夹存放图片，图片名字随意
   - markdown.md
   - linux.md
+  - main.cpp
+  - bubblesort.cpp
+  - bubblesort.hpp
+  - Makefile
 ```

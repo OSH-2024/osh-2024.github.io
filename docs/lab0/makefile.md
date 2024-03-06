@@ -106,7 +106,9 @@ void bubbleSort(std::vector<int>& arr);
 请你将上述三段代码复制到lab0/目录下，并在该目录下：
 
 参照上述示例Makefile格式，编写Makefile文件来编译这段代码，输出可执行文件命名为bubble_sort.
+
 要求：
+
 - 使用 `make` 命令时，编译生成可执行文件
 - 使用 `make clean` 命令时，删除生成的可执行文件
 
@@ -116,6 +118,7 @@ void bubbleSort(std::vector<int>& arr);
 请你参考C++的宏机制以及g++的编译选项，在Makefile中加入一段代码，以及对cpp源代码进行适当修改，来打印出冒泡排序中每次交换元素之后的vector的值。
 
 要求：
+
 - 使用 `make debug` 命令时，编译生成的可执行文件在每次交换元素之后会打印出vector的值(debug信息)，与此同时，使用 `make` 命令生成的可执行文件不会打印debug信息
 
 
