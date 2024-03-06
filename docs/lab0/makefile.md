@@ -47,6 +47,7 @@ clean:
 
 `CC` 定义了使用的编译器（这里是 g++）。
 `CFLAGS` 定义了编译选项（这里开启了编译优化选项-O2）。
+`VERSION` 指定了编译器使用的C++版本。
 `TARGET` 定义了最终生成的可执行文件的名称。
 `SRCS` 定义了源文件的列表。
 `$(TARGET): $(SRCS)` 表示 `TARGET` 依赖于 `SRCS` 中的所有源文件。
@@ -58,7 +59,7 @@ clean:
 
 ## 练习
 
-- **「必做」**
+**「必做」**
 
 以下是一些示例代码文件:
 
@@ -102,15 +103,23 @@ void bubbleSort(std::vector<int>& arr) {
 
 void bubbleSort(std::vector<int>& arr);
 ```
+请你将上述三段代码复制到lab0/目录下，并在该目录下：
 
-请你参照上述示例Makefile格式，编写Makefile文件来编译这段代码，输出可执行文件命名为bubble_sort.
+参照上述示例Makefile格式，编写Makefile文件来编译这段代码，输出可执行文件命名为bubble_sort.
 要求：
-* 使用 `make` 命令时，编译生成可执行文件
-* 使用 `make clean` 命令时，删除生成的可执行文件
+- 使用 `make` 命令时，编译生成可执行文件
+- 使用 `make clean` 命令时，删除生成的可执行文件
 
-- **「选做」**
+
+**「选做」**
 
 请你参考C++的宏机制以及g++的编译选项，在Makefile中加入一段代码，以及对cpp源代码进行适当修改，来打印出冒泡排序中每次交换元素之后的vector的值。
 
 要求：
-* 使用 `make debug` 命令时，编译生成的可执行文件在每次交换元素之后会打印出vector的值(debug信息)，与此同时，使用 `make` 命令生成的可执行文件不会打印debug信息
+- 使用 `make debug` 命令时，编译生成的可执行文件在每次交换元素之后会打印出vector的值(debug信息)，与此同时，使用 `make` 命令生成的可执行文件不会打印debug信息
+
+
+**参考资料**：
+1. https://seisman.github.io/how-to-write-makefile/introduction.html
+2. https://www.gnu.org/software/make/manual/make.html
+3. https://makefiletutorial.com/
