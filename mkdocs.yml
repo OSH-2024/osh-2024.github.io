@@ -29,7 +29,9 @@ nav:
       - 一：Linux: lab0/linux.md
       - 二：Git: lab0/git.md
       - 三：Markdown: lab0/markdown.md
-      - 四：编程说明: lab0/programming.md
+      - 四：Makefile: lab0/makefile.md
+      - 五：编程说明: lab0/programming.md
+
   - FAQ: faq/README.md
 extra_javascript:
   - mathjax-config.js
