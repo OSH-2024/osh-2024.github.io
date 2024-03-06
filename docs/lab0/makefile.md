@@ -57,6 +57,8 @@ clean:
 
 如果在当前目录只使用 `make` 命令，`Makefile` 会查找到文件中的第一个目标文件，在本示例中为 `$(TARGET)`，即 `program`，并使用 `$(CC) $(CFLAGS) -o $@ $^`，即 `g++ -O2 -o program main.cpp utils.cpp` 编译目标文件。
 
+注：从网页上复制的Makefile文件会将tab缩进替换为四个空格，复制后请替换回去，以免Makefile无法识别命令。
+
 ## 练习
 
 **「必做」**
