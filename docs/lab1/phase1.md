@@ -76,6 +76,10 @@ make -j $((`nproc`-1))
 qemu-system-x86_64 -kernel arch/x86_64/boot/bzImage
 ```
 
+???+ info "提示"
+
+    使用`Ctrl-a x`可以退出qemu type.
+
 ???+ question "无 GUI 环境/无法看到输出"
 
     在上述命令后面加上选项 `-nographic -append console=ttyS0`
