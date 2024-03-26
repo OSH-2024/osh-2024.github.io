@@ -22,7 +22,7 @@ Linux 在启动时，会首先加载初始内存盘（initrd）进行初始化�
 #include <stdio.h>
 
 int main() {
-    printf("Hello! PB23XXXXXX\n"); // Your Student ID
+    printf("Hello! PB22XXXXXX\n"); // Your Student ID
     while (1) {}
 }
 ```
