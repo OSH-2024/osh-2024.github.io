@@ -36,7 +36,14 @@ nav:
       - 一：Linux 编译: lab1/phase1.md
       - 二：创建初始内存盘: lab1/phase2.md
       - 三：添加自定义系统调用: lab1/phase3.md
-
+  - 实验二:
+      - 零：简介: lab2/README.md
+      - 一：目录导航: lab2/dir.md
+      - 二：管道: lab2/pipe.md
+      - 三：重定向: lab2/redirection.md
+      - 四：信号处理: lab2/signal.md
+      - 五：前后台进程: lab2/fgbg.md
+      - 六：「可选」拓展功能: lab2/optional.md
   - FAQ: faq/README.md
 extra_javascript:
   - mathjax-config.js
