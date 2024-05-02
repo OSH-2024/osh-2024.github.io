@@ -44,6 +44,12 @@ nav:
       - 四：信号处理: lab2/signal.md
       - 五：前后台进程: lab2/fgbg.md
       - 六：「可选」拓展功能: lab2/optional.md
+  - 实验三:
+      - 零：简介: lab3/README.md
+      - 一：HTTP&socket 简介: lab3/intro.md
+      - 二：必做部分: lab3/required.md
+      - 三：选做部分: lab3/optional.md
+      - 四：测试及评分: lab3/score.md
   - FAQ: faq/README.md
 extra_javascript:
   - mathjax-config.js
