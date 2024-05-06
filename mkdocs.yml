@@ -51,6 +51,4 @@ nav:
       - 四：测试及评分: lab3/score.md
   - FAQ: faq/README.md
 extra_javascript:
-  - mathjax-config.js
   - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
