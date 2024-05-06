@@ -1,5 +1,5 @@
 {
-  "name": "2023",
+  "name": "课程主页",
   "version": "1.0.0",
   "description": "课程主页",
   "private": true,
@@ -9,19 +9,10 @@
     "dev": "mkdocs serve",
     "build": "mkdocs build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ustc-compiler-principles/2023"
-  },
   "keywords": [
     "ustc",
     "course"
   ],
-  "author": "2023",
-  "bugs": {
-    "url": "https://github.com/ustc-compiler-principles/2023/issues"
-  },
-  "homepage": "https://github.com/ustc-compiler-principles/2023#readme",
   "dependencies": {
     "autocorrect-node": "^2.8.4",
     "prettier": "^3.1.0"
