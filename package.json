@@ -1,37 +1,29 @@
 {
-  "name": "osh-2024",
+  "name": "2023",
   "version": "1.0.0",
-  "description": "USTC OSH 2024 课程主页",
-  "main": "index.js",
+  "description": "课程主页",
   "private": true,
   "scripts": {
-    "test": "prettier --check docs",
-    "format": "prettier --write docs",
-    "prepare": "husky install",
+    "test": "prettier --check docs && autocorrect --lint docs",
+    "format": "prettier --write docs && autocorrect --fix docs",
     "dev": "mkdocs serve",
     "build": "mkdocs build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OSH-2024/OSH-2024.github.io.git"
+    "url": "git+https://github.com/ustc-compiler-principles/2023"
   },
   "keywords": [
     "ustc",
-    "osh",
     "course"
   ],
-  "author": "OSH-2024",
-  "license": "Apache-2.0",
+  "author": "2023",
   "bugs": {
-    "url": "https://github.com/OSH-2024/OSH-2024.github.io/issues"
+    "url": "https://github.com/ustc-compiler-principles/2023/issues"
   },
-  "homepage": "https://github.com/OSH-2024/OSH-2024.github.io#readme",
+  "homepage": "https://github.com/ustc-compiler-principles/2023#readme",
   "dependencies": {
-    "husky": "^7.0.4",
-    "lint-staged": "^12.2.2",
-    "prettier": "^2.5.1"
-  },
-  "lint-staged": {
-    "docs/**/*": "prettier --write --ignore-unknown"
+    "autocorrect-node": "^2.8.4",
+    "prettier": "^3.1.0"
   }
 }
