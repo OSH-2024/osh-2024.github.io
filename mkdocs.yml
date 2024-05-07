@@ -20,8 +20,7 @@ markdown_extensions:
       permalink: true
       slugify: !!python/name:markdown.extensions.toc.slugify_unicode
 extra_css:
-  # Borrow CSS from Linux 101 still
-  - 'https://101.ustclug.org/css/extra.css'
+  - css/extra.css
 nav:
   - 首页: README.md
   - 实验零:
@@ -52,6 +51,4 @@ nav:
       - 四：测试及评分: lab3/score.md
   - FAQ: faq/README.md
 extra_javascript:
-  - mathjax-config.js
   - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  - '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
