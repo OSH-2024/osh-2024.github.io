@@ -1,0 +1,1558 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../makefile/">
+      
+      
+        <link rel="next" href="../../lab1/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>五：编程说明 - USTC OSH 2024 课程主页</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.732c4fb1.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#编程说明" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="USTC OSH 2024 课程主页" class="md-header__button md-logo" aria-label="USTC OSH 2024 课程主页" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            USTC OSH 2024 课程主页
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              五：编程说明
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/OSH-2024/OSH-2024.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OSH-2024/OSH-2024.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="USTC OSH 2024 课程主页" class="md-nav__button md-logo" aria-label="USTC OSH 2024 课程主页" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    USTC OSH 2024 课程主页
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/OSH-2024/OSH-2024.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    OSH-2024/OSH-2024.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实验零
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            实验零
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零：简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一：Linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二：Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三：Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../makefile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    四：Makefile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    五：编程说明
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    五：编程说明
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c-的要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      C 的要求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-的要求_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ 的要求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rust-的要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rust 的要求
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rust 的要求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#实验中的优缺点" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验中的优缺点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#外部库的要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      外部库的要求
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#调试" class="md-nav__link">
+    <span class="md-ellipsis">
+      调试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="调试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdb-调试" class="md-nav__link">
+    <span class="md-ellipsis">
+      GDB 调试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vscode-调试" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSCode 调试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#练习" class="md-nav__link">
+    <span class="md-ellipsis">
+      练习
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实验一
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            实验一
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零：简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/phase1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一：Linux 编译
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/phase2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二：创建初始内存盘
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/phase3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三：添加自定义系统调用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实验二
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            实验二
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零：简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/dir/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一：目录导航
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/pipe/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二：管道
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/redirection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三：重定向
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/signal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    四：信号处理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/fgbg/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    五：前后台进程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab2/optional/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    六：「可选」拓展功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实验三
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            实验三
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零：简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab3/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一：HTTP&socket 简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab3/required/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二：必做部分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab3/optional/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三：选做部分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab3/score/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    四：测试及评分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实验四
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            实验四
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零：简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab4/Ceph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一：Ceph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab4/Ray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    二：Ray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#c-的要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      C 的要求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-的要求_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ 的要求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rust-的要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rust 的要求
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rust 的要求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#实验中的优缺点" class="md-nav__link">
+    <span class="md-ellipsis">
+      实验中的优缺点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#外部库的要求" class="md-nav__link">
+    <span class="md-ellipsis">
+      外部库的要求
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#调试" class="md-nav__link">
+    <span class="md-ellipsis">
+      调试
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="调试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdb-调试" class="md-nav__link">
+    <span class="md-ellipsis">
+      GDB 调试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vscode-调试" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSCode 调试
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#练习" class="md-nav__link">
+    <span class="md-ellipsis">
+      练习
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="编程说明">编程说明<a class="headerlink" href="#编程说明" title="Permanent link">&para;</a></h1>
+<p>本学期实验如无特殊声明均允许使用 C、C++、Rust 其中任意一种语言完成。本章将简单介绍需要掌握或了解的 C、C++、Rust 语言知识。这些知识并不一定会在实验中用到，但是理解它们或许能够指导你的实际开发过程并减少在各个语言文档中探索的时间。</p>
+<h2 id="c-的要求">C 的要求<a class="headerlink" href="#c-的要求" title="Permanent link">&para;</a></h2>
+<ul>
+<li>了解 C99 标准下几乎所有的 C 用法，这是考虑到 C 的标准语言特性并不太多，更进阶的用法也更倾向于依赖编译器特性或是标准用法的巧用；</li>
+<li>了解基本的宏知识，例如宏函数中参数使用时需要括号包裹，这是因为调用 Linux API 时需要用到宏；</li>
+<li>掌握查询 Linux API 文档的方法，无论是使用 <code>man</code>、<code>tldr</code> 或是直接查看网页版 man 文档。</li>
+</ul>
+<h2 id="c-的要求_1">C++ 的要求<a class="headerlink" href="#c-的要求_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>掌握基本的 C 用法；</li>
+<li>宏，如 C 要求所述；</li>
+<li>Linux API 文档，如 C 要求所述;</li>
+<li>了解一些 Morden C++ 的用法，可以为你减少编程工作量。</li>
+</ul>
+<details class="tips">
+<summary>关于 Modern C++</summary>
+<p>如果你选择使用 C++ 完成实验，那么<span style="color:red">请不要将 C++ 代码写得宛如 C 一样</span>。现代的、C++11 标准后的 C++ 增添了众多强有力的工具，能够帮助你以更高效、更简洁的手段达成目标。</p>
+<p>如需全方位的了解 Modern C++，可以阅读《A Tour of C++》以及进阶的例如《Modern Effective C++》等书籍，其中详细讲解了 Modern C++ 中的一些设计理念和最佳实践。也可以参考《<a href="https://changkun.de/modern-cpp/zh-cn/00-preface/">现代 C++ 教程</a>》。</p>
+<p>下面我们也给出一些 tips：</p>
+<ul>
+<li>（STL）栈上的固定大小数组 <code>int a[12]</code> 使用 <code>std::array</code> 代替；</li>
+<li>（STL）堆上的不定长数组 <code>new int[n]</code> 使用 <code>std::vector</code> 代替；</li>
+<li>（STL）使用 <code>std::string</code> 代替 <code>chat buf[N]</code>。用 <code>s.c_str()</code> 或是 <code>&amp;s[0]</code> 获取 C 字符串的不可变或可变指针。</li>
+</ul>
+<p>以下是一些进阶内容，可以选择性了解：</p>
+<ul>
+<li>（STL）<code>&lt;memory&gt;</code> 中 <code>unique_ptr</code>、<code>shared_ptr</code> 和 <code>weak_ptr</code> 智能指针可以实现自动在合适的时刻释放资源，可以配合 <code>std::thread</code> 等使用。<span style="color:blue">可以尝试使用智能指针替换所有裸指针</span>；</li>
+<li>（性能）了解左值，右值和将亡值的概念。了解移动语义、<code>std::move</code> 的使用和完美转发；</li>
+<li>（设计）了解 lambda 表达式及其捕获方式；</li>
+<li>（设计）了解虚函数及如何通过继承实现多态。</li>
+</ul>
+</details>
+<h2 id="rust-的要求">Rust 的要求<a class="headerlink" href="#rust-的要求" title="Permanent link">&para;</a></h2>
+<details class="tips">
+<summary>关于 Rust</summary>
+<p>安装教程可以在 <a href="https://www.rust-lang.org/tools/install">官网安装界面</a> 查看。
+详细语言教程也可以在 <a href="https://www.rust-lang.org/learn">官网教程汇总界面</a> 按需查阅。
+其中重点是 <a href="https://doc.rust-lang.org/book/">Rust Book</a> 这份教程，其在高低层次上都对 Rust 进行了详细的解析。
+而如果你之前只了解过 C 开发，可以着重关注 Rust Book 中的以下概念：</p>
+<ul>
+<li>Ownership，lifetime，borrow，这些是 Rust 最核心的概念之一；<ul>
+<li>对应章节是 <a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Understanding Ownership</a> 和 <a href="https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html">Validating References with Lifetimes</a>。</li>
+</ul>
+</li>
+<li>模式匹配（pattern matching），如 <code>match</code> 和 <code>if let</code> 的用法；<ul>
+<li><span style="color:blue">用好模式匹配可以极大简化你的代码</span></li>
+</ul>
+</li>
+<li>Cargo 的使用，从而完成 Rust 的依赖管理及编译等工作；<ul>
+<li>安利：<code>cargo clippy</code> 可以对代码进行 <span style="color:blue">静态检查</span>，帮助你 <span style="color:blue">重构代码</span>。C++ 也有类似的工具 clangd（是 CLion 的默认分析器，也和 VSCode 配合的很好），可以参照官网安装使用。</li>
+</ul>
+</li>
+<li>并发编程，包括多线程（互斥锁，channel）、协程（async）等；</li>
+<li>函数式编程（functional programming），如 <code>map</code>、<code>filter</code> 的用法；</li>
+<li>基本的 unsafe Rust 用法，可能会在调用外部库时用到。</li>
+</ul>
+<p>在本课程实验之外，也可以拓展了解以下内容：</p>
+<ul>
+<li>智能指针（smart pointer），C++ <code>&lt;memory&gt;</code> 库中也有相似实现；</li>
+<li>错误处理（error handling），Rust 错误处理与 Go 有类似之处，如有经验可以对照学习，但本次实验应该不会在错误处理上有较高要求，把握概念即可；</li>
+<li>Traits（有译作特质的），类似于接口，可用于实现多态。</li>
+</ul>
+<p>其他的例如 <a href="https://doc.rust-lang.org/rust-by-example/">Rust by Example</a> 也是很优质的教程，也能让你迅速找到自己所需要的写法。</p>
+</details>
+<p>实验自愿使用 Rust 语言，不会做进一步的要求。
+如果你选择在实验中使用 Rust 语言，你依然可以从助教处获取一些语言使用上的基础帮助，并与其他同学在同一标准下进行评测。</p>
+<h3 id="实验中的优缺点">实验中的优缺点<a class="headerlink" href="#实验中的优缺点" title="Permanent link">&para;</a></h3>
+<p>选择 Rust 可能会在本轮实验中遇见以下优缺点：</p>
+<p>优点：</p>
+<ul>
+<li>Rust 的基础库和包管理比 C++ 更全面而更易用；</li>
+<li>Rust 的内存安全保证可以尽量让你避免遇到难以 debug 的 segmentation fault 问题；</li>
+<li>Rust 对于一些比较现代的技术，例如协程，有相对更好的支持，在实验中需要遇到类似情况时会更方便。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>Rust 的学习曲线稍显陡峭，尤其是从原汁原味的 C 出发的话；</li>
+<li>Rust 不能直接使用 Linux API（由众多 C header 文件提供），下文我们将详细讨论这个问题。</li>
+</ul>
+<h3 id="外部库的要求">外部库的要求<a class="headerlink" href="#外部库的要求" title="Permanent link">&para;</a></h3>
+<p>如优缺点中所言，尽管 Rust 标准库相对较丰富，但需要调用特定 Linux API 时，Linux 提供的是 C header 文件。从头文件到 Rust 的绑定较为麻烦，所以如无特地声明，我们默认允许使用 Rust 语言时调用以下这些外部库（后续可能会增充此列表，但不会删减）：</p>
+<ul>
+<li><code>nix</code></li>
+<li><code>libc</code></li>
+</ul>
+<p>如你不满足于这些外部库、希望使用其他外部库时，请尽量提前询问助教。在最后验收实验时，助教会参考以下条件对除上述列表以外的外部库进行评定：</p>
+<ul>
+<li>此外部库是否仅是 Linux C API FFI？如是，则允许；</li>
+<li>此外部库使用方法是否与原本 C 中调用的方法相类似？如是，参考相似程度允许；</li>
+<li>此外部库是否破坏了原本的实验设计目标？如是，则禁止；如否，参考和实验目标相关程度允许。</li>
+</ul>
+<p>如果一个外部库被禁止，实验中对应项目将可能被酬情扣分。</p>
+<h2 id="调试">调试<a class="headerlink" href="#调试" title="Permanent link">&para;</a></h2>
+<details class="tips" open="open">
+<summary>预期目标</summary>
+<p>了解 <code>-g</code> 编译选项的作用，至少掌握 GDB/VSCode 调试中的一种。</p>
+</details>
+<p>在本学期的实验中，你可能会写出各式各样的 bug，用好 debugger 往往可以大幅提升你的调试效率。本部分主要介绍 C++ 程序的调试。</p>
+<h3 id="gdb-调试">GDB 调试<a class="headerlink" href="#gdb-调试" title="Permanent link">&para;</a></h3>
+<p>本节会对 C/C++ 常用的 <a href="https://www.sourceware.org/gdb/">GDB (GNU Project debugger)</a> 进行介绍。</p>
+<p>例如，在以下的程序中，运行到 <code>throw 20</code> 时会抛出一个异常</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">foo</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;testing&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">foo</span><span class="p">();</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>如果你直接编译（<code>g++ example.cpp</code>）并运行，会得到以下输出：</p>
+<div class="highlight"><pre><span></span><code>./a.out
+terminate<span class="w"> </span>called<span class="w"> </span>after<span class="w"> </span>throwing<span class="w"> </span>an<span class="w"> </span>instance<span class="w"> </span>of<span class="w"> </span><span class="s1">&#39;int&#39;</span>
+<span class="o">[</span><span class="m">1</span><span class="o">]</span><span class="w">    </span><span class="m">12079</span><span class="w"> </span>IOT<span class="w"> </span>instruction<span class="w"> </span><span class="o">(</span>core<span class="w"> </span>dumped<span class="o">)</span><span class="w">  </span>./a.out
+</code></pre></div>
+<p>此时只知道程序发生了错误，但并不知道是哪里出了问题。这时候就可以使用 gdb 来进行调试（取代简单的 print）：</p>
+<p>在编译时使用 <code>g++ example.cpp -g</code>，完成编译后，运行 <code>gdb a.out</code>，会进入以下界面：</p>
+<div class="highlight"><pre><span></span><code>&lt;some intro here&gt;
+For help, type &quot;help&quot;.
+Type &quot;apropos word&quot; to search for commands related to &quot;word&quot;...
+Reading symbols from a.out...
+(gdb)
+</code></pre></div>
+<p>此时输入 <code>run</code> 然后回车，gdb 就会运行你的程序，得到：</p>
+<div class="highlight"><pre><span></span><code>Starting program: /home/catoverflow/Projects/tmp/a.out
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library &quot;/usr/lib/libthread_db.so.1&quot;.
+terminate called after throwing an instance of &#39;int&#39;
+Program received signal SIGABRT, Aborted.
+0x00007ffff7ae534c in __pthread_kill_implementation () from /usr/lib/libc.so.6
+(gdb)
+</code></pre></div>
+<p>说明程序发生了错误，并回到终端。输入 <code>bt</code> (back trace) 并回车就可以看到程序的调用栈：</p>
+<div class="highlight"><pre><span></span><code>(gdb) bt
+#0  0x00007ffff7ae534c in __pthread_kill_implementation () from /usr/lib/libc.so.6
+#1  0x00007ffff7a984b8 in raise () from /usr/lib/libc.so.6
+#2  0x00007ffff7a82534 in abort () from /usr/lib/libc.so.6
+#3  0x00007ffff7dfc7ee in __gnu_cxx::__verbose_terminate_handler () at /usr/src/debug/gcc/libstdc++-v3/libsupc++/vterminate.cc:95
+#4  0x00007ffff7e08c4c in __cxxabiv1::__terminate (handler=&lt;optimized out&gt;) at /usr/src/debug/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:48
+#5  0x00007ffff7e08cb9 in std::terminate () at /usr/src/debug/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:58
+#6  0x00007ffff7e08f5e in __cxxabiv1::__cxa_throw (obj=&lt;optimized out&gt;, tinfo=0x555555557db0 &lt;typeinfo for int@CXXABI_1.3&gt;, dest=0x0)
+    at /usr/src/debug/gcc/libstdc++-v3/libsupc++/eh_throw.cc:95
+#7  0x00005555555551a4 in foo () at example.cpp:5
+#8  0x00005555555551c6 in main () at example.cpp:10
+</code></pre></div>
+<p>调用栈将函数调用自底向上显示，最上面的就是最后被调用的函数，在这里上面的都是链接的系统库，下面的两个则是我们自己的函数。这时就很容易发现错误发生在 <code>foo</code> 中，代码的第五行。</p>
+<p>最后，输入 <code>q</code> 并回车就可以退出了。除了上面的 bt，常用的指令还有 <code>break</code>（添加断点），用 <code>attach</code> 命令连接到线程（在多线程调试中非常有用）等等，具体的用法可以查阅相关文档。</p>
+<details class="tips">
+<summary>编译时参数 -g 的作用？</summary>
+<p>在终端输入 <code>man gdb</code> 并找到 <code>-g</code> 的帮助文档，可以看到：</p>
+<div class="highlight"><pre><span></span><code>-g  Produce debugging information in the operating system&#39;s native format (stabs, COFF, XCOFF, or DWARF).  GDB can work with this
+       debugging information.
+</code></pre></div>
+<p>简单来说，这个参数会在编译的时候加入额外的调试信息，比如代码所在的行号（在 gdb 报错的时候非常有用，还可以拿来插入断点）等等。否则 gdb 调试的就是一个简单的二进制文件，能输出的信息会少很多。</p>
+<p>你也可以不加 <code>-g</code>，然后对比一下 gdb 的输出。</p>
+</details>
+<h3 id="vscode-调试">VSCode 调试<a class="headerlink" href="#vscode-调试" title="Permanent link">&para;</a></h3>
+<p>在命令行里用 gdb debug 虽然简单，但是很多时候不够直观方便。你也可以尝试用 IDE 自带的 debug 功能（有些是基于 gdb 的，但是提供了非常方便的操作界面）。这里以 VSCode 为例：</p>
+<p>VSCode 调试的核心是工作区的 <code>launch.json</code> 文件。在安装了 C/C++ 插件后，点击调试，应该可以自动在工作区的 <code>.vscode</code> 文件夹下生成一份与下面类似的 <code>launch.json</code> 文件。正确配置后，点击调试即可启动断点调试功能。</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.0.0&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;configurations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(gdb) Launch&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cppdbg&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;request&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;launch&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;program&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;${workspaceFolder}/可执行文件名&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">      </span><span class="nt">&quot;cwd&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;${workspaceFolder}&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;environment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">      </span><span class="err">......</span><span class="w"> </span><span class="c1">// 其他配置选项，这里略去</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>以下配置选项需要关注：</p>
+<ul>
+<li><code>cwd</code>：当前的工作路径，调试若需要用到命令行参数，其中的文件路径就是相对工作路径的；</li>
+<li><code>program</code>：程序位置。注意这里的程序需要是带 <code>-g</code> 选项编译出来的；</li>
+<li><code>args</code>：命令行参数数组。例如，如果我想调试 <code>./main -o output.txt input.txt</code>：
+  <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;-o&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;output.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;input.txt&quot;</span><span class="p">]</span>
+</code></pre></div></li>
+<li><code>environment</code>：参考 <a href="https://code.visualstudio.com/docs/cpp/launch-json-reference#_environment">官方文档</a>。</li>
+</ul>
+<details class="question" open="open">
+<summary>每次修改代码后需要再次手动编译？</summary>
+<p>是的，对于单个文件或 CMake 项目等具体情况，VSCode 都有很方便的一键编译调试功能，但这里介绍的是一般情况，需要先编译出一个带有调试信息的可执行文件，再用 VSCode 对该可执行文件调试。所以每次修改源文件后都需要再次手动编译。</p>
+</details>
+<p>在完成了 lab2 后，你会对 <code>args</code> 和 <code>environment</code> 选项有更深刻的理解。</p>
+<p>IDE 的断点调试往往都比较直观，这里就不再介绍了，同学们可以自行探索。</p>
+<h2 id="练习">练习<a class="headerlink" href="#练习" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>使用 C++ 编写一个 <code>split</code> 字符串函数，函数签名如下：</p>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">split</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">d</span><span class="p">);</span>
+</code></pre></div>
+<p>如调用 <code>split("1,2,3", ",")</code> 后，会返回一个包含 string 对象 <code>"1", "2", "3"</code> 的 vector。</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../makefile/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 四：Makefile">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                四：Makefile
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../lab1/" class="md-footer__link md-footer__link--next" aria-label="下一页: 零：简介">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                零：简介
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
